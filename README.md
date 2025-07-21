@@ -160,17 +160,6 @@ All contributions—code, docs, ideas—make the project better. 💙
 
 ---
 
-## 📄 License
 
-This project is licensed under the **MIT License**.
-See `LICENSE` for details.
-
----
-
-## 🙏 Acknowledgements
-
-* **ESP32 Arduino Core** – Espressif Systems
-* **LiquidCrystal\_I2C** library
-* Inspired by countless open‑source water‑meter hacks 🌍
 
 
