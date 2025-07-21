@@ -27,7 +27,7 @@ It exposes a modern mobile‑friendly web interface, logs cumulative monthly usa
 | 1 | **YF‑S201** or similar flow sensor | Pulse output on GPIO 4 |
 | 1 | **5 V relay module** | Active‑low control on GPIO 5 (or change in code) |
 | 1 | **16 × 2 I²C LCD** (0x27) | SDA→21, SCL→22 (default pins) |
-| 1 | 5 V power supply | ≥ 500 mA recommended |
+| 1 | 5 V Dynamo Generator | kinetic energy of flowing water |
 | — | Assorted jump wires, ½″ → sensor adapters, enclosure, etc. |
 
 > **Pipe diameter** in code (`pipeDiameter = 0.0127 m`) assumes a ½″ line.  
@@ -37,7 +37,7 @@ It exposes a modern mobile‑friendly web interface, logs cumulative monthly usa
 
 ## ⚙️ Wiring
 
-```
+
 
 ESP32        Flow Sensor (YF‑S201)
 \=====        =====================
@@ -58,7 +58,7 @@ ESP32        Relay
 GND ──────▶ GND
 GPIO5─────▶ IN
 
-````
+
 
 ---
 
