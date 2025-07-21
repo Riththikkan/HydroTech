@@ -35,28 +35,36 @@ It exposes a modern mobile‑friendly web interface, logs cumulative monthly usa
 
 ---
 
-## ⚙️ Wiring
+## ⚙️ Wiring Connections
 
+### 🔌 ESP32 ↔️ Flow Sensor (YF-S201)
+| ESP32 Pin | Flow Sensor Wire | Description         |
+|-----------|------------------|---------------------|
+| 3V3       | Vcc (Red)        | Power supply        |
+| GND       | GND (Black)      | Ground              |
+| GPIO4     | Signal (Yellow)  | Pulse output signal |
 
+---
 
-ESP32        Flow Sensor (YF‑S201)
-\=====        =====================
-3V3  ──────▶ Vcc   (red)
-GND  ──────▶ GND   (black)
-GPIO4──────▶ Signal(yellow)
+### 📺 ESP32 ↔️ I²C LCD Display
+| ESP32 Pin | LCD Pin | Description         |
+|-----------|---------|---------------------|
+| 5V        | Vcc     | Power supply        |
+| GND       | GND     | Ground              |
+| GPIO21    | SDA     | I²C Data line       |
+| GPIO22    | SCL     | I²C Clock line      |
 
-ESP32        I²C LCD
-\=====        =======
-5V  ──────▶ Vcc
-GND ──────▶ GND
-GPIO21────▶ SDA
-GPIO22────▶ SCL
+---
 
-ESP32        Relay
-\=====        =====
-5V  ──────▶ Vcc
-GND ──────▶ GND
-GPIO5─────▶ IN
+### 🔒 ESP32 ↔️ Relay Module
+| ESP32 Pin | Relay Pin | Description         |
+|-----------|-----------|---------------------|
+| 5V        | Vcc       | Power supply        |
+| GND       | GND       | Ground              |
+| GPIO5     | IN        | Control signal      |
+
+> ⚠️ **Note:** Ensure your components support 3.3V logic levels if needed. Use a logic level shifter if compatibility issues arise.
+
 
 
 
